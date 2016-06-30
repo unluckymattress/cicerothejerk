@@ -1,15 +1,48 @@
-body {
-    background-color: grey;
+[class*="bg__"] {
+  position: relative;
+
+  height: 50vh;
+
+  text-indent: -9999px;
+
+  /* fix background */
+  background-attachment: fixed;
+
+  /* center it */
+  background-position: center center;
+
+  /* Scale it nicely to the element */
+  background-size: cover;
+
+  /* just make it look a bit better ;) */
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
 }
+
+.bg__foo {
+  background-image: url(http://i.imgur.com/sI3WlZo.jpg);
+}
+
+.bg__bar {
+  background-image: url(http://i.imgur.com/L4f9tGJ.jpg);
+}
+
+.bg__baz {
+  background-image: url(http://i.imgur.com/HcUNGBE.jpg);
+}
+
+.bg__bazz {
+
+  background-image: url(http://imgur.com/3J2Wm1M.jpg);
+}
+
+
 
 img {
   max-width: 100%;
   position: relative;
   top: -100px;
-}
-
-html {
-  font-size:100%;
 }
 
 .panel {
@@ -20,11 +53,12 @@ html {
   margin-left:auto;
   margin-right:auto;
   min-width: 200px;
-  bottom: -200px;
+  bottom: 1500px;
 }
 
 .twitter-timeline {
   margin-bottom: 100px;
+  position: relative;
 
 }
 
