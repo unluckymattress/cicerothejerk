@@ -21,20 +21,20 @@
 }
 
 .bg__foo {
-  background-image: url(http://i.imgur.com/sI3WlZo.jpg);
+  background-image: url("../images/cicero1.jpg");
 }
 
 .bg__bar {
-  background-image: url(http://i.imgur.com/L4f9tGJ.jpg);
+  background-image: url("../images/cicero2.jpg");
 }
 
 .bg__baz {
-  background-image: url(http://i.imgur.com/HcUNGBE.jpg);
+  background-image: url("../images/cicero3.jpg");
 }
 
 .bg__bazz {
 
-  background-image: url(http://imgur.com/3J2Wm1M.jpg);
+  background-image: url("../images/cicero4.jpg");
 }
 
 
