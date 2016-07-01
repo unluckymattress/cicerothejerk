@@ -1,8 +1,33 @@
 body {
-    background-color: red;
+    background-color: grey;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+  top: -100px;
+}
+
+html {
+  font-size:100%;
+}
+
+.panel {
+  background-color: black;
+  max-width: 80%;
+  position: relative;
+  border-color: black;
+  margin-left:auto;
+  margin-right:auto;
+  min-width: 200px;
+  bottom: -200px;
+}
+
+.twitter-timeline {
+  margin-bottom: 100px;
+
 }
 
 #twitter {
-    display: inline-block;
-
+  padding-bottom: 50px;
 }
