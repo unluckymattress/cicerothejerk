@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Is Cicero Being a Jerk Today?</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -17,9 +16,18 @@
         {% load staticfiles %}
         <!-- {% static "styles.css" %} -->
         <link rel="stylesheet" href="{% static 'cicero/css/styles.css' %}" media="screen" charset="utf-8">
-        <!-- <script src="{% static "/Users/jealousmango/Documents/Dojo/Django/project/apps/cicero/static/cicero/JQuery" %}"></script>
-        <script src="{% static "js/rango-jquery.js" %}"></script> -->
         <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+        <script>
+    // trying to keep the page from scrolling up on click
+        var tempScrollTop = $(window).scrollTop();
+        $(document).ready(function(){
+          // var tempScrollTop = $(window).scrollTop();
+          $("#flip").click(function(){
+            $("#panel").slideToggle("fast");
+          });
+        });
+        // $(window).scrollTop(tempScrollTop);
+        </script>
         <title>Cicero the Jerk</title>
     </head>
     <body>
@@ -30,7 +38,7 @@
         <div class="bg__bazz">bazz</div>
     </div>
     <div class="container">
-      <div class="row">
+      <!-- <div class="row"> -->
          <div class="panel panel-default">
             <img  src="{% static 'cicero/images/CicerBannerPNG.png' %}" alt="Cicero banner"/>
              <div class="panel-body">
@@ -40,7 +48,34 @@
                </div>
             </div>
           </div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-md-12"id="flip"><p><br/><button class="btn btn-theme">About</button></p></div>
+                  <div class="col-md-12" id="panel">Our cat Cicero eats all the time. Now, we can quantify how fat he is being. Next to his automatic food bowl is a Raspberry Pi. The Pi has been configured to tweet out a randomized tweet and gif when it detects movement near the bowl. That's basically it, for now.
+                  </div>
+                  <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-md-6">
+ 					<i class="fa fa-flask"></i>
+ 					<h4>Krysten Cooper</h4>
+ 					<p>Test</p>
+ 					<p><br/><a href="https://github.com/Krysco" class="btn btn-theme">GitHub</a></p>
+ 				</div>
+ 				<div class="col-md-6">
+ 					<i class="fa fa-flask"></i>
+ 					<h4>Matthew Mitchell</h4>
+ 					<p>Test</p>
+ 					<p><br/><a href="https://github.com/Jealousmango" class="btn btn-theme">GitHub</a></p>
+          <p><br/><a href="https://twitter.com/Jealousmango" class="btn btn-theme">Twitter</a></p>
+ 				</div>
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->
+            </div>
+         </div>
        </div>
+       <!-- </div> -->
      </div>
     </body>
 </html>
