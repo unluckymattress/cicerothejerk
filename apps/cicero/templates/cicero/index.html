@@ -31,19 +31,22 @@
         <title>Cicero the Jerk</title>
     </head>
     <body>
-    <div class="container">
-      <!-- <div class="row"> -->
-         <div class="panel panel-default">
-            <img  src="{% static 'cicero/images/CicerBannerPNG.png' %}" alt="Cicero banner"/>
-             <div class="panel-body">
-               <div id="twitter" class="col-md-12 col-sm-12 col-xs-12 text-center">
-                  <a class="twitter-timeline"  href="https://twitter.com/CiceroBarkley" data-widget-id="733904258387431424">Tweets by @CiceroBarkley</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-               </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-body">
+    <div id="container">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero1.jpg">
+        <img  src="{% static 'cicero/images/CicerBannerPNG.png' %}" alt="Cicero banner"/>
+        <div class="box">
+             <a class="twitter-timeline"  href="https://twitter.com/CiceroBarkley" data-widget-id="733904258387431424"></a>
+             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+      </div>
+
+      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero2.jpg"></div>
+
+      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero3.jpg"></div>
+
+      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero4.jpg"></div>
+
                 <div class="col-md-12"id="flip"><p><br/><button class="btn btn-theme">About</button></p></div>
                   <div class="col-md-12" id="panel">Our cat Cicero eats all the time. Now, we can quantify how fat he is being. Next to his automatic food bowl is a Raspberry Pi. The Pi has been configured to tweet out a randomized tweet and gif when it detects movement near the bowl. That's basically it, for now.
                   </div>
