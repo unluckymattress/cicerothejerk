@@ -31,48 +31,56 @@
         <title>Cicero the Jerk</title>
     </head>
     <body>
-    <div id="container">
-      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero1.jpg">
-        <img  src="{% static 'cicero/images/CicerBannerPNG.png' %}" alt="Cicero banner"/>
-        <div class="box">
+
+      <div id="container">
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'cicero/images/cicero1.jpg' %}">
+
+          <img class="banner" src="{% static 'cicero/images/CicerBannerPNG.png' %}" alt="Cicero banner"/>
+
+            <div class="box">
+
              <a class="twitter-timeline"  href="https://twitter.com/CiceroBarkley" data-widget-id="733904258387431424"></a>
              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+            </div>
+
         </div>
+
+          <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'cicero/images/cicero2.jpg' %}"></div>
+
+          <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'cicero/images/cicero3.jpg' %}"></div>
+
+          <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'cicero/images/cicero4.jpg' %}"></div>
 
       </div>
 
-      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero2.jpg"></div>
+   <div class="about">
 
-      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero3.jpg"></div>
-
-      <div class="parallax-window" data-parallax="scroll" data-image-src="cicerothejerk/apps/cicero/static/cicero/images/cicero4.jpg"></div>
-
-                <div class="col-md-12"id="flip"><p><br/><button class="btn btn-theme">About</button></p></div>
-                  <div class="col-md-12" id="panel">Our cat Cicero eats all the time. Now, we can quantify how fat he is being. Next to his automatic food bowl is a Raspberry Pi. The Pi has been configured to tweet out a randomized tweet and gif when it detects movement near the bowl. That's basically it, for now.
-                  </div>
-                  <div id="service">
-	 	<div class="container">
- 			<div class="row centered">
- 				<div class="col-md-6">
- 					<i class="fa fa-flask"></i>
- 					<h4>Krysten Cooper</h4>
- 					<p>Test</p>
- 					<p><br/><a href="https://github.com/Krysco" class="btn btn-theme">GitHub</a></p>
- 				</div>
- 				<div class="col-md-6">
- 					<i class="fa fa-flask"></i>
- 					<h4>Matthew Mitchell</h4>
- 					<p>Test</p>
- 					<p><br/><a href="https://github.com/Jealousmango" class="btn btn-theme">GitHub</a></p>
-          <p><br/><a href="https://twitter.com/Jealousmango" class="btn btn-theme">Twitter</a></p>
- 				</div>
-	 		</div>
-	 	</div><! --/container -->
-	 </div><! --/service -->
-            </div>
+         <div class="col-md-12"id="flip"><p><br/><button class="btn btn-theme">About</button></p></div>
+         <div class="col-md-12" id="panel">Our cat Cicero eats all the time. Now, we can quantify how fat he is being. Next to his automatic food bowl is a Raspberry Pi. The Pi has been configured to tweet out a randomized tweet and gif when it detects movement near the bowl. That's basically it, for now.
          </div>
-       </div>
-       <!-- </div> -->
-     </div>
+
+      <div id="service">
+         <div>
+            <div class="row centered">
+               <div class="col-md-6">
+                <i class="fa fa-flask"></i>
+                <h4>Krysten Cooper</h4>
+                <p>Test</p>
+                <p><br/><a href="https://github.com/Krysco" class="btn btn-theme">GitHub</a></p>
+               </div>
+            <div class="col-md-6">
+                  <i class="fa fa-flask"></i>
+                  <h4>Matthew Mitchell</h4>
+                  <p>Test</p>
+                  <p><br/><a href="https://github.com/Jealousmango" class="btn btn-theme">GitHub</a></p>
+                  <p><br/><a href="https://twitter.com/Jealousmango" class="btn btn-theme">Twitter</a></p>
+            </div>
+            </div>
+      </div><! --/about -->
+   </div><! --/service -->
+
+
     </body>
 </html>
